@@ -50,4 +50,15 @@
 	color:white;
 	animation: fadeIn ease 3s;
 }
+
+#allvids {
+	padding-top: 100px;
+	text-align: center;
+	animation: fadeIn ease 7s;
+}
+
+#allvids button{
+	font-size: calc(0.5rem + 3vw);
+	font-family: "DIN Next";	
+}
 	
