@@ -47,19 +47,19 @@
 <body id="" class="loading initial-load">
 	<div id="timer"> <span><div id="countdown"></div></span>
 		<script type="text/javascript">
-		const queryString = window.location.search;
-        console.log(queryString);
-		const urlParams = new URLSearchParams(queryString);
-		var birthday = urlParams.get('birthday')
-		var time = urlParams.get('time')
-		  var j = new Date(birthday + " " + time).getTime();;
-      
-      $("#countdown")
-      .countdown(j, function(event) {
-        $(this).text(
-          event.strftime('%D:%H:%M:%S')
-        );
-      });
+			const queryString = window.location.search;
+	        console.log(queryString);
+			const urlParams = new URLSearchParams(queryString);
+			var birthday = urlParams.get('birthday')
+			var time = urlParams.get('time')
+			  var j = new Date(birthday + " " + time).getTime();;
+	      
+	      $("#countdown")
+	      .countdown(j, function(event) {
+	        $(this).text(
+	          event.strftime('%D:%H:%M:%S')
+	        );
+	      });
 		</script>
 	</div>
 	<div class="toggleaudio" title="hehe. i don't know how to sync it lol. just keep pressing 'ON' until it sounds synced enough.">AUDIO: <a class="pointer" onclick="playAudio()">ON</a> - <a class="pointer" onclick="pauseAudio()">OFF</a>
@@ -84,23 +84,23 @@
 	<div><a onclick="toggleText()" class="timer-button" style="cursor: pointer;">TOGGLE TEXT</a> 
 	</div>
 	<script>
-	function toggleText() {
-	var x = document.getElementById("mori");
-	if (x.style.opacity === "") {
-	x.style.transition= "opacity 0.5s ease-in-out";
-    x.style.opacity = "0";
-	
-	} else if (x.style.opacity === "0") {
-    x.style.opacity = "1";
-	} else {
-	x.style.opacity = "0";
-	}
-	}
+		function toggleText() {
+		var x = document.getElementById("mori");
+		if (x.style.opacity === "") {
+		x.style.transition= "opacity 0.5s ease-in-out";
+	    x.style.opacity = "0";
+		
+		} else if (x.style.opacity === "0") {
+	    x.style.opacity = "1";
+		} else {
+		x.style.opacity = "0";
+		}
+		}
 	</script>
 	<a onclick="window.location='secret.html'+queryString;" id="mork">
 		<img src="mork.png" id="mork_img">
 	</a>
-	<footer class="flex-wrapper" id="mori" >
+	<footer class="flex-wrapper" id="mori">
 		<div>Time is ticking.</div>
 		<div>Make the most of it.</div>
 	</footer>

@@ -1,81 +1,70 @@
 #inputdate {
 	font-size: calc(0.5rem + 3vw);
 	font-family: "DIN Next";
-	display:block;
-	    text-align: center;
+	display: block;
+	text-align: center;
 	animation: fadeIn ease 4s;
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
-
 #inputdate input {
 	font-size: calc(0.5rem + 3vw);
 	font-family: "DIN Next";
 }
-
 #inputtime {
 	font-size: calc(0.5rem + 3vw);
 	font-family: "DIN Next";
-	display:block;
+	display: block;
 	text-align: center;
 	animation: fadeIn ease 5s;
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
-
 #inputtime input {
 	font-size: calc(0.5rem + 3vw);
 	font-family: "DIN Next";
 }
-
 #submitbutton {
 	padding-top: 50px;
 	padding-bottom: 50px;
 	font-size: calc(0.5rem + 3vw);
 	font-family: "DIN Next";
-	display:block;
-	    text-align: center;
+	display: block;
+	text-align: center;
 	animation: fadeIn ease 6s;
 }
-
 #submitbutton input {
 	font-size: calc(0.5rem + 3vw);
 	font-family: "DIN Next";
 }
-
 .textthings {
-		font-size: calc(0.5rem + 3vw);
+	font-size: calc(0.5rem + 3vw);
 	font-family: "DIN Next";
 	text-align: center;
-	color:white;
+	color: white;
 	animation: fadeIn ease 3s;
 }
-
 #allvids {
 	padding-top: 100px;
 	text-align: center;
 	animation: fadeIn ease 7s;
 }
-
-#allvids button{
+#allvids button {
 	font-size: calc(0.5rem + 3vw);
-	font-family: "DIN Next";	
+	font-family: "DIN Next";
 }
-
 #turncoat {
 	position: fixed;
 	opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
 }
-
 #turncoat:hover {
 	opacity: 1;
 }
-	
 #submitbutton2 {
-	color:white;
+	color: white;
 	text-align: center;
 	animation: fadeIn ease 6s;
-	font-family: "DIN Next";	
-	cursor:pointer
+	font-family: "DIN Next";
+	cursor: pointer
 }
