@@ -46,6 +46,7 @@ transition: opacity 0.5s ease-in-out;
 #mork {
  position:absolute;
  display:block;
+ cursor: pointer;
  width: 8vw;
  bottom:75px;
  left:125px;
