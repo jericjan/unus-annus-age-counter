@@ -61,4 +61,14 @@
 	font-size: calc(0.5rem + 3vw);
 	font-family: "DIN Next";	
 }
+
+#turncoat {
+	position: fixed;
+	opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#turncoat:hover {
+	opacity: 1;
+}
 	
