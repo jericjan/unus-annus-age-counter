@@ -47,48 +47,48 @@
 <body id="" class="loading initial-load">
 	<div id="timer"> <span><div id="countdown"></div></span>
 		<script type="text/javascript">
-		const queryString = window.location.search;
-        console.log(queryString);
-		const urlParams = new URLSearchParams(queryString);
-		var birthday = urlParams.get('birthday')
-		var time = urlParams.get('time')
-			// Set the date we're counting down to
-		var countDownDate = new Date(birthday + " " + time).getTime();
-		console.log(birthday + " " + time)
-
-			// Update the count down every 1 second
-		var x = setInterval(function() {
-
-			// Get today's date and time
-			var now = new Date().getTime();
-    
-			// Find the distance between now and the count down date
-			var distance = now - countDownDate;
-    
-			// Time calculations for days, hours, minutes and seconds
-			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-			
-			function seconds_2digits(seconds)
-			{ 
-			return (seconds < 10 ? '0' : '') +seconds;
-			}
-			
-			function hours_2digits(hours)
-			{ 
-			return (hours < 10 ? '0' : '') +hours;
-			}
-			
-			function days_2digits(days)
-			{ 
-			return (days < 10 ? '0' : '') +days;
-			}
-			// Output the result in an element with id="demo"
-			document.getElementById("countdown").innerHTML = days_2digits(days) + ":" + hours_2digits(hours) + ":"
-			+ minutes + ":" + seconds_2digits(seconds);
-			}, 1000);
+			const queryString = window.location.search;
+	        console.log(queryString);
+			const urlParams = new URLSearchParams(queryString);
+			var birthday = urlParams.get('birthday')
+			var time = urlParams.get('time')
+				// Set the date we're counting down to
+			var countDownDate = new Date(birthday + " " + time).getTime();
+			console.log(birthday + " " + time)
+	
+				// Update the count down every 1 second
+			var x = setInterval(function() {
+	
+				// Get today's date and time
+				var now = new Date().getTime();
+	    
+				// Find the distance between now and the count down date
+				var distance = now - countDownDate;
+	    
+				// Time calculations for days, hours, minutes and seconds
+				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+				
+				function seconds_2digits(seconds)
+				{ 
+				return (seconds < 10 ? '0' : '') +seconds;
+				}
+				
+				function hours_2digits(hours)
+				{ 
+				return (hours < 10 ? '0' : '') +hours;
+				}
+				
+				function days_2digits(days)
+				{ 
+				return (days < 10 ? '0' : '') +days;
+				}
+				// Output the result in an element with id="demo"
+				document.getElementById("countdown").innerHTML = days_2digits(days) + ":" + hours_2digits(hours) + ":"
+				+ minutes + ":" + seconds_2digits(seconds);
+				}, 1000);
 		</script>
 	</div>
 	<div class="toggleaudio" title="hehe. i don't know how to sync it lol. just keep pressing 'ON' until it sounds synced enough.">AUDIO: <a class="pointer" onclick="playAudio()">ON</a> - <a class="pointer" onclick="pauseAudio()">OFF</a>
@@ -113,23 +113,23 @@
 	<div><a onclick="toggleText()" class="timer-button" style="cursor: pointer;">TOGGLE TEXT</a> 
 	</div>
 	<script>
-	function toggleText() {
-	var x = document.getElementById("mori");
-	if (x.style.opacity === "") {
-	x.style.transition= "opacity 0.5s ease-in-out";
-    x.style.opacity = "0";
-	
-	} else if (x.style.opacity === "0") {
-    x.style.opacity = "1";
-	} else {
-	x.style.opacity = "0";
-	}
-	}
+		function toggleText() {
+		var x = document.getElementById("mori");
+		if (x.style.opacity === "") {
+		x.style.transition= "opacity 0.5s ease-in-out";
+	    x.style.opacity = "0";
+		
+		} else if (x.style.opacity === "0") {
+	    x.style.opacity = "1";
+		} else {
+		x.style.opacity = "0";
+		}
+		}
 	</script>
 	<a onclick="window.location='secret.html'+queryString;" id="mork">
 		<img src="mork.png" id="mork_img">
 	</a>
-	<footer class="flex-wrapper" id="mori" >
+	<footer class="flex-wrapper" id="mori">
 		<div>Time is ticking.</div>
 		<div>Make the most of it.</div>
 	</footer>
