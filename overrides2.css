@@ -11,7 +11,7 @@
 
 @font-face {
   font-family: 'DIN Next';
-  src: url(DINNextLTPro-Medium.woff2);
+  src: url('DINNextLTPro-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
 }
@@ -131,6 +131,11 @@ animation: fadeIn ease 3s;
 #timer span {
   color: white;
   font-size: calc(0.5rem + 15vw);
+}
+
+#mori div {
+	font-size: calc(0.5rem + 3vw);
+	font-family: "DIN Next";
 }
 
 .available-on {
