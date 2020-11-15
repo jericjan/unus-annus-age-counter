@@ -70,3 +70,20 @@
 	font-family: "DIN Next";
 	cursor: pointer
 }
+#unus_annus_logo1 {
+	top: 100px;
+	left: 120px;
+	width: 13vw;
+	position:absolute;
+	transform: rotate(20deg);
+	animation: fadeIn ease 10s;
+}
+
+#unus_annus_logo2 {
+	top: 400px;
+	right: 175px;
+	width: 13vw;
+	position:absolute;
+	transform: rotate(-20deg);
+	animation: fadeIn ease 10s;
+}
