@@ -10,11 +10,24 @@
 <footer class="flex-wrapper" id="inputthings">
 <div class="textthings">How much time have you spent?</div>
 		<div class="textthings">Soon you'll find out...</div>
-<form action="age.html" method="GET">
+<form action="age.html" method="GET" name="Form1">
   <div id="inputdate"><input type="date"  name="birthday"></div>
   <div id="inputtime"><input type="time" name="time"></div>
   <div id="submitbutton"><input type="submit"></div>
+  <div id="submitbutton2" onclick="return OnButton2();">...or make a countdown</div>
 </form>
+<script>
+function OnButton2()
+{
+    document.Form1.action = "custom_countdown.html"
+    document.Form1.submit();             // Submit the page
+    return true;
+}
+</script>
+<form action="custom_countdown.html" method="GET" id="form2">
+</form>
+
+
 <div id="allvids" ><button type="button" style="cursor: pointer;" onclick="window.location='titles.html';">All the Unus Annus Video Titles</button></div>
 </footer>
 </body>

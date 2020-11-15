@@ -72,3 +72,10 @@
 	opacity: 1;
 }
 	
+#submitbutton2 {
+	color:white;
+	text-align: center;
+	animation: fadeIn ease 6s;
+	font-family: "DIN Next";	
+	cursor:pointer
+}
