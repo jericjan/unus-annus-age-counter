@@ -8,6 +8,7 @@
 	padding-bottom: 50px;
 }
 #inputdate input {
+	text-align: center;
 	font-size: calc(0.5rem + 3vw);
 	font-family: "DIN Next";
 }
@@ -23,6 +24,7 @@
 #inputtime input {
 	font-size: calc(0.5rem + 3vw);
 	font-family: "DIN Next";
+	text-align: center;
 }
 #submitbutton {
 	padding-top: 50px;
