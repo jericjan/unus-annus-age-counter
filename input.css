@@ -1,0 +1,53 @@
+#inputdate {
+	font-size: calc(0.5rem + 3vw);
+	font-family: "DIN Next";
+	display:block;
+	    text-align: center;
+	animation: fadeIn ease 4s;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#inputdate input {
+	font-size: calc(0.5rem + 3vw);
+	font-family: "DIN Next";
+}
+
+#inputtime {
+	font-size: calc(0.5rem + 3vw);
+	font-family: "DIN Next";
+	display:block;
+	text-align: center;
+	animation: fadeIn ease 5s;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#inputtime input {
+	font-size: calc(0.5rem + 3vw);
+	font-family: "DIN Next";
+}
+
+#submitbutton {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-size: calc(0.5rem + 3vw);
+	font-family: "DIN Next";
+	display:block;
+	    text-align: center;
+	animation: fadeIn ease 6s;
+}
+
+#submitbutton input {
+	font-size: calc(0.5rem + 3vw);
+	font-family: "DIN Next";
+}
+
+.textthings {
+		font-size: calc(0.5rem + 3vw);
+	font-family: "DIN Next";
+	text-align: center;
+	color:white;
+	animation: fadeIn ease 3s;
+}
+	
