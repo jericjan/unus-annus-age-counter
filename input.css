@@ -68,22 +68,48 @@
 	text-align: center;
 	animation: fadeIn ease 6s;
 	font-family: "DIN Next";
+}
+#submitbutton2 a {
 	cursor: pointer
 }
 #unus_annus_logo1 {
 	top: 100px;
 	left: 120px;
 	width: 13vw;
-	position:absolute;
+	position: absolute;
 	transform: rotate(20deg);
-	animation: fadeIn ease 10s;
+	animation: fadeIn ease-in 8s, unusanim1 3s infinite;
 }
-
+@keyframes unusanim1 {
+	0% {
+		transform: translate(7px, -11000px) rotate(20deg);
+	}
+	50% {
+		transform: translate(8px, 100px) rotate(-26deg);
+	}
+	100% {
+		transform: translate(7px, 850px) rotate(20deg);
+	}
+}
 #unus_annus_logo2 {
 	top: 400px;
 	right: 175px;
 	width: 13vw;
-	position:absolute;
+	position: absolute;
 	transform: rotate(-20deg);
-	animation: fadeIn ease 10s;
+	animation: fadeIn ease-in 8s, unusanim2 3s infinite;
+}
+@keyframes unusanim2 {
+	0% {
+		transform: translate(7px, -11000px) rotate(-26deg);
+	}
+	50% {
+		transform: translate(8px, 100px) rotate(20deg);
+	}
+	100% {
+		transform: translate(7px, 600px) rotate(-26deg);
+	}
+}
+body {
+	overflow: hidden;
 }
