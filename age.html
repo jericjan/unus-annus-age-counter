@@ -115,18 +115,22 @@
 	<script>
 	function toggleText() {
 	var x = document.getElementById("mori");
-	if (x.style.opacity === "1") {
-    x.style.opacity = "0";
+	console.log(x.style.opacity);
+	if (x.style.opacity === "") {
 	x.style.transition= "opacity 0.5s ease-in-out";
-	} else {
+    x.style.opacity = "0";
+	
+	} else if (x.style.opacity === "0") {
     x.style.opacity = "1";
+	} else {
+	x.style.opacity = "0";
 	}
 	}
 	</script>
 	<a onclick="window.location='secret.html'+queryString;" id="mork">
 		<img src="mork.png" id="mork_img">
 	</a>
-	<footer class="flex-wrapper" id="mori">
+	<footer class="flex-wrapper" id="mori" >
 		<div>Time is ticking.</div>
 		<div>Make the most of it.</div>
 	</footer>
