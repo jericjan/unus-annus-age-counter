@@ -187,7 +187,7 @@ aside > ul {
 body {
 	position: relative;
 }
-@supports (mix-blend-mode: multiply) {
+/*@supports (mix-blend-mode: multiply) {
 	body:before {
 		content: "";
 		position: fixed;
@@ -195,7 +195,7 @@ body {
 		right: 0;
 		width: calc(50vw - ((100vw - 100%)/2));
 		/* absolute voodoo magic that gets rid of the scroll bar being counted in vw */
-		z-index: 20;
+	/*	z-index: 20;
 		background: black;
 		height: 100%;
 		mix-blend-mode: exclusion;
@@ -208,7 +208,7 @@ body {
 	}
 	#white body:before {
 		transform: scaleX(0.001);
-	}
+	}*/
 }
 #black .color-white {
 	display: none;
