@@ -136,7 +136,7 @@
 		transform: translate(10%, 30vh) rotate(-180deg);
 	}
 	100% {
-		transform: translate(100%, 60vh) rotate(20deg);
+		transform: translate(100%, 60vh) rotate(-340deg);
 	}
 }
 
@@ -199,12 +199,13 @@ width: 13vw;
 		transform: translate(-10%, 30vh) rotate(180deg);
 	}
 	100% {
-		transform: translate(-100%, 60vh) rotate(-20deg);
+		transform: translate(-100%, 60vh) rotate(340deg);
 	}
 }
 
 #magicbutton {
 	font-family: "DIN Next";
+	position: absolute;
 	color: white;
 	opacity:0;
 	transition: opacity 0.5s ease-in-out;
