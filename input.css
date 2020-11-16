@@ -73,7 +73,7 @@
 #submitbutton2 a {
 	cursor: pointer
 }
-#unus_annus_logo1 {
+.ua_logo1_mode1 {
 	top: 0px;
 	left: 0px;
 	width: 13vw;
@@ -92,7 +92,55 @@
 		transform: translate(50%, 105vh) rotate(20deg);
 	}
 }
-#unus_annus_logo2 {
+
+.ua_logo1_mode2 {
+	top: 0px;
+	left: 0px;
+	width: 13vw;
+	background:green
+	position: absolute;
+	transform: rotate(20deg);
+	animation: fadeIn ease-in 8s, unusanim1-2 3s infinite;
+}
+@keyframes unusanim1-2 {
+	0% {
+		transform: translate(50%, 25vh) rotate(20deg);
+	}
+	50% {
+		transform: translate(50%, 25vh) rotate(-26deg);
+	}
+	100% {
+		transform: translate(50%, 25vh) rotate(20deg);
+	}
+}
+
+.ua_logo1_mode3 {
+	top: 0px;
+	left: 0px;
+	width: 13vw;
+	background:red
+	position: absolute;
+	animation: fadeIn ease-in 8s, unusanim1-3 3s linear infinite;
+}
+@keyframes unusanim1-3 {
+	0% {
+		transform: translate(100%, 60vh) rotate(20deg);
+	}
+	25% {
+		transform: translate(150%, 30vh) rotate(0deg)
+	}
+	50% {
+		transform: translate(80%, 10vh) rotate(-90deg);
+	}
+	75% {
+		transform: translate(10%, 30vh) rotate(-180deg);
+	}
+	100% {
+		transform: translate(100%, 60vh) rotate(20deg);
+	}
+}
+
+.ua_logo2_mode1 {
 right:0px;
 top:0px;
 width: 13vw;
@@ -109,6 +157,62 @@ width: 13vw;
 	100% {
 		transform: translate(-50%, 105vh) rotate(-26deg);
 	}
+}
+
+.ua_logo2_mode2 {
+right:0px;
+top:0px;
+width: 13vw;
+	position: absolute;
+	animation: fadeIn ease-in 8s, unusanim2-2 3s infinite;
+}
+@keyframes unusanim2-2 {
+	0% {
+		transform: translate(-50%, 50vh) rotate(-26deg);
+	}
+	50% {
+		transform: translate(-50%, 50vh) rotate(20deg);
+	}
+	100% {
+		transform: translate(-50%, 50vh) rotate(-26deg);
+	}
+}
+
+.ua_logo2_mode3 {
+right:0px;
+top:0px;
+width: 13vw;
+	position: absolute;
+	animation: fadeIn ease-in 8s, unusanim2-3 3s linear infinite;
+}
+@keyframes unusanim2-3 {
+	0% {
+		transform: translate(-100%, 60vh) rotate(-20deg);
+	}
+	25% {
+		transform: translate(-150%, 30vh) rotate(0deg);
+	}
+	50% {
+		transform: translate(-80%, 10vh) rotate(90deg);
+	}
+	75% {
+		transform: translate(-10%, 30vh) rotate(180deg);
+	}
+	100% {
+		transform: translate(-100%, 60vh) rotate(-20deg);
+	}
+}
+
+#magicbutton {
+	font-family: "DIN Next";
+	color: white;
+	opacity:0;
+	transition: opacity 0.5s ease-in-out;
+	cursor:pointer;
+}
+
+#magicbutton:hover {
+	opacity:1;
 }
 ::-webkit-scrollbar {
 	display: none;
