@@ -3,4 +3,4 @@ So as you know, Unus Annus is dead. And so I thought to myself, "What if I made 
 
 To-do list:
 - add custom text
-- clean up messy code
+- clean up messy unused code
