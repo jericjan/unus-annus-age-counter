@@ -74,8 +74,8 @@
 	cursor: pointer
 }
 #unus_annus_logo1 {
-	top: 100px;
-	left: 120px;
+	top: 0px;
+	left: 0px;
 	width: 13vw;
 	position: absolute;
 	transform: rotate(20deg);
@@ -83,32 +83,31 @@
 }
 @keyframes unusanim1 {
 	0% {
-		transform: translate(7px, -11000px) rotate(20deg);
+		transform: translate(50%, -1000vh) rotate(20deg);
 	}
 	50% {
-		transform: translate(8px, 100px) rotate(-26deg);
+		transform: translate(50%, 25vh) rotate(-26deg);
 	}
 	100% {
-		transform: translate(7px, 850px) rotate(20deg);
+		transform: translate(50%, 105vh) rotate(20deg);
 	}
 }
 #unus_annus_logo2 {
-	top: 400px;
-	right: 175px;
-	width: 13vw;
+right:0px;
+top:0px;
+width: 13vw;
 	position: absolute;
-	transform: rotate(-20deg);
 	animation: fadeIn ease-in 8s, unusanim2 3s infinite;
 }
 @keyframes unusanim2 {
 	0% {
-		transform: translate(7px, -11000px) rotate(-26deg);
+		transform: translate(-50%, -1000vh) rotate(-26deg);
 	}
 	50% {
-		transform: translate(8px, 100px) rotate(20deg);
+		transform: translate(-50%, 50vh) rotate(20deg);
 	}
 	100% {
-		transform: translate(7px, 600px) rotate(-26deg);
+		transform: translate(-50%, 105vh) rotate(-26deg);
 	}
 }
 ::-webkit-scrollbar {
