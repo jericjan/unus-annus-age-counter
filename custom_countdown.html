@@ -52,8 +52,16 @@
 			const urlParams = new URLSearchParams(queryString);
 			var birthday = urlParams.get('birthday')
 			var time = urlParams.get('time')
-			  var j = new Date(birthday + " " + time).getTime();;
-	      
+			var epoch = urlParams.get('epoch')
+			if (birthday == null && time == null){
+				if (epoch != null){
+				var j = epoch * 1000
+				} else {
+					alert("No parameters provided in the URL! Try again.")
+				}
+			} else {
+			var j = new Date(birthday + " " + time).getTime();;
+			}
 	      $("#countdown")
 	      .countdown(j, function(event) {
 	        $(this).text(

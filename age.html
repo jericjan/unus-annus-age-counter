@@ -52,9 +52,17 @@
 			const urlParams = new URLSearchParams(queryString);
 			var birthday = urlParams.get('birthday')
 			var time = urlParams.get('time')
-				// Set the date we're counting down to
-			var countDownDate = new Date(birthday + " " + time).getTime();
-			console.log(birthday + " " + time)
+			var epoch = urlParams.get('epoch')
+						
+			if (birthday == null && time == null){
+				if (epoch != null){
+				var countDownDate = epoch * 1000
+				} else {
+					alert("No parameters provided in the URL! Try again.")
+				}
+			} else {
+			var countDownDate = new Date(birthday + " " + time).getTime();;
+			}			
 	
 				// Update the count down every 1 second
 			var x = setInterval(function() {
